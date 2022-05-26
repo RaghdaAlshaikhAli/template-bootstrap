@@ -1,0 +1,138 @@
+/* general style.............................................................................. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #777 !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+a,.btn2{
+    text-decoration: none;
+    color: #CCCCFF !important;
+}
+a:hover,.btn2:hover{
+    color: white !important;
+}
+ul{
+    list-style: none;
+}
+.carousel-inner h1{
+    text-shadow: 1px 1px #333;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 7px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+.card-body h2{
+    font-size: 40px;
+}
+code{
+    font-size: 18px !important;
+}
+.myicon{
+    height:30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    align-self: center;
+}
+.fixed{
+    height: 250px;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.fixed1{
+    background-image: url(../image/coraa.jpg);
+}
+.fixed2{
+    background-image: url(../image/computers.jpg);
+}
+.btnbefo{
+    position: relative;
+    left: 30px;
+}
+.btnbefo::before{
+    position: absolute;
+    content: "";
+    border-width: 10px;
+    border-style:solid;
+    border-color: transparent transparent lightblue transparent;
+    top: 20px;
+    left: 13px;
+    display: none;
+}
+.btnbefo::after{
+    position: absolute;
+    content: " ";
+    height: 40px;
+    width: 80px;
+    background-color: lightblue;
+    top: 40px;
+    left: -15px;
+    border-radius: 5px;
+    display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btnbefo:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px white, -10px -10px 20px white;
+}
+.dropdown-menu li a{
+    text-shadow: 1px 1px 0px black;
+}
+/* ///////////////nav//////////////////// */
+.ma_nav{
+    opacity:0.8
+}
+.me-3{
+    height:40px;
+    width:40px;
+}
+.good{
+    border-right:1px solid #ccc;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.caro-img{
+    height:550px;
+}
+.html{
+    background-color: #555; 
+    border-radius: 7px;
+}
+
+.go-link{
+    cursor: pointer;
+}
